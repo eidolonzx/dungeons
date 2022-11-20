@@ -58,20 +58,6 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
-name = "gunicorn"
-version = "20.1.0"
-description = "WSGI HTTP Server for UNIX"
-category = "main"
-optional = false
-python-versions = ">=3.5"
-
-[package.extras]
-eventlet = ["eventlet (>=0.24.1)"]
-gevent = ["gevent (>=1.4.0)"]
-setproctitle = ["setproctitle"]
-tornado = ["tornado (>=0.2)"]
-
-[[package]]
 name = "itsdangerous"
 version = "2.1.2"
 description = "Safely pass data to untrusted environments and back."
@@ -209,7 +195,7 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "32daaee0d207967fca12354a25dd4566b1977f34f3d7d32bf5edbd10fe0813b6"
+content-hash = "f92f72ae0e6a521de91646e80ebd09b8fe6420798cba78d94276bafdd82c6791"
 
 [metadata.files]
 atomicwrites = []
@@ -217,7 +203,6 @@ attrs = []
 click = []
 colorama = []
 flask = []
-gunicorn = []
 itsdangerous = []
 jinja2 = []
 markupsafe = []
