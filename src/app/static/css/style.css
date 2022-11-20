@@ -1,0 +1,102 @@
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    height: 100vh;
+    width: 100%;
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+article {
+    font-family: 'Tangerine', cursive;
+    padding: 0 0 10px 0;
+    text-align: center;
+    width: 320px;
+    font-size: 18px;
+}
+
+button {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+#puzzleboard {
+    display: grid;
+    grid-template-columns: 30px repeat(8, 30px);
+    grid-template-rows: 30px repeat(8, 30px); 
+}
+
+div {
+    border: 1px solid black;
+    justify-content: center;
+}
+
+.topkey {
+    grid-template-columns: 30px repeat(10, 30px);
+    display: grid;
+    text-align: center;
+}
+
+.topkey div {
+    display: flex;
+    align-items: flex-end;
+}
+
+.leftkey {
+    text-align: right;
+    padding: 2px 5px 0px 0px;
+}
+
+.instr-label {
+    color: black;
+}
+
+#puzzle-full {
+    display: block;
+}
+
+#instructions {
+    display: none;
+    padding: 0 2px;
+}
+
+#instructions-text {
+    width: 361px;
+    height: 333px;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: -40px 2px 0 2px;
+}
+
+
+/* BOLD GRID LINES */
+    /* Top */
+    #c1r1, #c2r1, #c3r1, #c4r1, #c5r1, #c6r1, #c7r1, #c8r1 {
+        border-top: 4px solid black;
+    }
+
+    /* Bottom */
+    #c1r8, #c2r8, #c3r8, #c4r8, #c5r8, #c6r8, #c7r8, #c8r8 {
+        border-bottom: 4px solid black;
+    }
+
+    /* Left */
+    #c1r1, #c1r2, #c1r3, #c1r4, #c1r5, #c1r6, #c1r7, #c1r8 {
+        border-left: 4px solid black;
+    }
+
+    /* Right */
+    #c8r1, #c8r2, #c8r3, #c8r4, #c8r5, #c8r6, #c8r7, #c8r8 {
+        border-right: 4px solid black;
+    }
+
+    /* White Corner Top Left */
+    #c0r0 {
+        border-left: white;
+        border-top: white;
+    }
