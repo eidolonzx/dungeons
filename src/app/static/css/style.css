@@ -27,8 +27,8 @@ button {
 
 #puzzleboard {
     display: grid;
-    grid-template-columns: 30px repeat(8, 30px);
-    grid-template-rows: 30px repeat(8, 30px); 
+    grid-template-columns: 50px repeat(8, 50px);
+    grid-template-rows: 50px repeat(8, 50px); 
 }
 
 div {
@@ -37,7 +37,7 @@ div {
 }
 
 .topkey {
-    grid-template-columns: 30px repeat(10, 30px);
+    grid-template-columns: 50px repeat(10, 50px);
     display: grid;
     text-align: center;
 }
